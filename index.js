@@ -81,7 +81,7 @@ const defaultProps = {
     onChange:                       () => {},
     onModalOpen:                    () => {},
     onModalClose:                   () => {},
-    showCancelButton:               true
+    showCancelButton:               true,
     keyExtractor:                   (item) => item.key,
     labelExtractor:                 (item) => item.label,
     componentExtractor:             (item) => item.component,
