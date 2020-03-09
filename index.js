@@ -271,19 +271,16 @@ export default class ModalSelector extends React.Component {
                             </View>
                         </ScrollView>
                     </View>
-
-                {this.props.showCancelButton ?
-
-                    <View style={[styles.cancelContainer, this.props.cancelContainerStyle]}>
-                        <TouchableOpacity onPress={this.close} activeOpacity={this.props.touchableActiveOpacity} accessible={this.props.cancelButtonAccessible} accessibilityLabel={this.props.cancelButtonAccessibilityLabel}>
-                            <View style={[styles.cancelStyle, this.props.cancelStyle]}>
-                                <Text style={[styles.cancelTextStyle,this.props.cancelTextStyle]}>{this.props.cancelText}</Text>
-                            </View>
-                        </TouchableOpacity>
-                    </View> :
-                    <View></View>
-                }
-               
+                    {this.props.showCancelButton ?
+                        <View style={[styles.cancelContainer, this.props.cancelContainerStyle]}>
+                             <TouchableOpacity onPress={this.close} activeOpacity={this.props.touchableActiveOpacity} accessible={this.props.cancelButtonAccessible} accessibilityLabel={this.props.cancelButtonAccessibilityLabel}>
+                                  <View style={[styles.cancelStyle, this.props.cancelStyle]}>
+                                       <Text style={[styles.cancelTextStyle,this.props.cancelTextStyle]}>{this.props.cancelText}</Text>
+                                   </View>
+                              </TouchableOpacity>
+                        </View> :
+                        <View></View>
+                    }
                 </View>
             </Overlay>);
     }
