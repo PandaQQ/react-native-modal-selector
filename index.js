@@ -281,7 +281,7 @@ export default class ModalSelector extends React.Component {
                             </View>
                         </TouchableOpacity>
                     </View> :
-                    <View>
+                    <View></View>
                 }
                
                 </View>
